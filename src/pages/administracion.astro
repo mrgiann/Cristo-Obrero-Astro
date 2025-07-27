@@ -1,0 +1,170 @@
+---
+import Layout from "../layouts/layout.astro";
+import "../styles/administracion.css";
+---
+
+<Layout title="Administración">
+  <main>
+    <button id="menu-toggle" aria-label="Abrir menú">
+      <span class="arrow">&#9654;</span>
+    </button>
+
+    <nav id="sidebar">
+      <a href="#administracion"><li>Administración</li></a>
+      <a href="#secretaria"><li>Secretaría</li></a>
+      <a href="#pastoral"><li>Pastoral</li></a>
+    </nav>
+
+    <div class="containeradministracion">
+      <section id="administracion">
+        <h2>Administración</h2>
+        <p>
+          <strong>Acceso al Estado de Cuenta</strong><br /> Con usuario y contraseña
+          (DNI del padre/tutor), se puede consultar el estado, imprimir cupón o pagar
+          online.
+        </p>
+        <p><strong>Trámites</strong></p>
+        <ul>
+          <li>
+            Consulta de pago de aranceles, certificado de libre deuda, entrega
+            de cupones
+          </li>
+          <li>
+            Cobro con tarjetas, agenda de reuniones con representante legal
+          </li>
+        </ul>
+        <p>
+          <strong>Horario de atención al público</strong> de lunes a viernes de 9
+          a 12 h
+        </p>
+        <p>
+          <strong>Contacto:</strong> (3541) 58-6801 o (3541) 42‑4494 · <a
+            href="mailto:administracion@iico.com.ar"
+            >administracion@iico.com.ar</a
+          >
+        </p>
+        <p><strong>Representante legal:</strong> Arq. Guillermo Buitrago</p>
+        <p>
+          <strong>Formas de pago:</strong> Pagomiscuentas, Link, Pagofácil, Rapipago
+          o botón de pago online <a
+            href="https://www.youtube.com/watch?v=PJ2vQdj45F4&feature=youtu.be"
+            >(ver tutorial)</a
+          >
+        </p>
+      </section>
+
+      <section id="secretaria">
+        <h2>Secretaría</h2>
+        <p>
+          <strong>Matrícula definitiva (2° a 7° año):</strong> entrega de formularios
+          y comprobante de pago.
+        </p>
+        <p>
+          <strong>Trámites</strong> información general, pases, títulos, actos administrativos
+        </p>
+        <p>
+          <strong>Horario</strong> lunes de 8 a 16:30 h · martes a viernes de 7:30–10
+          h.
+        </p>
+        <p>
+          <strong>Contacto</strong> (03541) 42‑4704 · <a
+            href="mailto:secretaria@iico.com.ar">secretaria@iico.com.ar</a
+          >
+        </p>
+        <p>
+          <strong>Responsables</strong> Secretario Prof. Gustavo Mauriño, Pro‑Secretaria
+          Pilar Oleiro
+        </p>
+      </section>
+
+      <section id="pastoral">
+        <h2>Pastoral</h2>
+        <p>
+          Escuela parroquial católica inspirada en Jesús y San José, con el
+          objetivo de fortalecer relaciones humanizadoras, paciencia y
+          compromiso.
+        </p>
+        <p><strong>Actividades pastoral:</strong></p>
+        <ul>
+          <li>Formación humana y religiosa (1° a 7° año).</li>
+          <li>Misas, celebraciones y convivencias.</li>
+          <li>PCC: proceso de Confirmación en Parroquia del Carmen.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <div class="containerfooter">
+    <footer class="footerr">
+      <div class="footer-container">
+        <!-- Izquierda: Logo e información -->
+        <div class="footer-section contacto">
+          <div class="logo-container">
+            <img src="/img/logo.png" alt="Logo" class="logo" />
+            <h3>Instituto Industrial <br /><span>Cristo Obrero</span></h3>
+          </div>
+          <div class="icon-text">
+            <img class="svg" src="img/location.svg" />
+            <p>
+              Florencio Sánchez 394,<br />Villa Carlos Paz,<br />Córdoba,
+              Argentina
+            </p>
+          </div>
+          <div class="icon-text">
+            <img class="svg" src="img/email.svg" />
+            <p>info@iico.edu.ar</p>
+          </div>
+          <div class="icon-text">
+            <img class="svg" src="img/phone.svg" />
+            <p>(03541) 42-4704</p>
+          </div>
+        </div>
+
+        <div class="footer-section enlaces">
+          <h4>Enlaces Rapidos</h4>
+          <ul>
+            <li><a href="/administracion">→ Administración</a></li>
+            <li><a href="/acompañamiento">→ Acompañamiento</a></li>
+            <li><a href="/noticias-y-proyectos">→ Noticias y proyectos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section accesos">
+          <h4>Accesos Directos</h4>
+          <a
+            class="acceso"
+            href="https://iico2025.aferreira.es/"
+            target="_blank"
+            ><img class="svgg" src="img/iphone.svg" />TutorAPP.net</a
+          >
+          <a class="acceso" href="https://deioweb.com.ar/SAG/" target="_blank"
+            ><img class="svgg" src="img/wallet.svg" />Estado de Cuenta</a
+          >
+          <a class="acceso" href="/descargas"
+            ><img class="svgg" src="img/download.svg" />Descargas</a
+          >
+        </div>
+      </div>
+
+      <!-- Línea inferior -->
+      <div class="footer-bottom"></div>
+    </footer>
+  </div>
+</Layout>
+
+<script is:inline>
+  const toggle = document.getElementById("menu-toggle");
+  const sidebar = document.getElementById("sidebar");
+  const links = sidebar?.querySelectorAll("a");
+
+  toggle?.addEventListener("click", () => {
+    sidebar?.classList.toggle("active");
+    toggle?.classList.toggle("active");
+  });
+
+  links?.forEach((link) => {
+    link.addEventListener("click", () => {
+      sidebar?.classList.remove("active");
+      toggle?.classList.remove("active");
+    });
+  });
+</script>

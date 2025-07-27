@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #65AFEB;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+.containeradministracion {
+  max-width: 1200px;
+  padding-left: 15.5rem;
+  padding-top: 4rem;
+}
+
+section {
+  padding-top: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#navbar .logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #65AFEB;
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 0.5em;
+  padding-left: 1.2em;
+}
+
+/* Botón hamburguesa */
+#menu-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 70px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+  padding: 0.4rem 0.8rem;
+  z-index: 20000000;
+  cursor: pointer;
+}
+
+/* Sidebar lateral */
+#sidebar {
+  position: fixed;
+  top: 69.98px;
+  left: 0;
+  width: 14rem;
+  height: 100vh;
+  background-color: #13222b;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: start;
+  gap: 1.5rem;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 150;
+}
+
+#sidebar a {
+  display: block;
+  width: 13rem;
+  padding: 0.2rem 0.5rem;
+  text-align: start;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+#sidebar li {
+  padding-left: 1rem;
+  list-style: disclosure-closed;
+}
+
+#sidebar a:hover {
+  background: rgba(101, 175, 235, 0.2);
+}
+
+/* Animación flecha (opcional si usás una flechita en el botón) */
+#menu-toggle .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#menu-toggle.active .arrow {
+  transform: rotate(90deg);
+}
+
+
+.footer {
+  display: none;
+  pointer-events: none;
+}
+
+.footerr{
+  background-color: hsla(204, 38%, 15%, 0.871);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.containerfooter{
+  margin-left: 224px;
+}
+/* Mobile: menú oculto por defecto */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  .containerfooter {
+    margin-left: 0px;
+    left: 0;
+    width: 100%;
+  }
+
+  #sidebar {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 70px);
+    background-color: #13222b;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    transform: translateY(-100%);
+    text-align: center;
+  }
+
+  #sidebar.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    position: fixed;
+  }
+
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sidebar li {
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar a {
+    all: unset;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    color: var(--blanco);
+    font-size: 1.1rem;
+    font-family: var(--fuente-principal);
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  #sidebar a:hover {
+    color: var(--celeste);
+  }
+
+  .containeradministracion {
+    padding-left: 1rem;
+  }
+}

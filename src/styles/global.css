@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+  --celeste: #65AFEB;
+  --blanco: #ffffff;
+  --fuente-principal: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: #111827;
+  margin: 0;
+}
+
+#content1 {
+  position: relative;
+  height: 550px;
+  height: 90vh;
+  background-image: 
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.4), rgba(17, 24, 39, 0.6)),
+    url(img/homeee.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 5%;
+  padding-bottom: 40px;
+  z-index: 0;
+}
+
+#content1 h1 {
+  color: var(--blanco);
+  margin: 0 0 10px 0;
+  z-index: 2;
+  position: relative;
+  text-align: left;
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background: #000000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: var(--blanco);
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+ font-family: var(--fuente-principal);
+}
+
+#content1 p {
+  color: var(--blanco);
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+  z-index: 2;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+
+.separador {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to left, #65AFEB, transparent);
+  width: 90%;
+  margin: 40px auto;
+  border-radius: 2px;
+}
+
+.separador2 {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #65AFEB, transparent);
+  width: 90%;
+  margin: 40px auto;
+  border-radius: 2px;
+}
+
+
+
+#content2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-color: #111827;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.lado {
+  flex: 1;
+  padding: 40px 20px;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.izquierdo {
+  background: linear-gradient(to right, #111827, #1f2937);
+}
+
+.derecho {
+  background: linear-gradient(to left, #374151, #4b5563);
+}
+
+.lado h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.lado p {
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.imagen-central {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: transparent;
+  pointer-events: none;
+  width: 280px; /* más grande que antes */
+  max-width: 30vw;
+}
+
+.imagen-central img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0 white) drop-shadow(0 0 3px white);
+  border: none; /* No uses border real */
+}
+
+
+/* ✅ Responsive para móviles */
+@media (max-width: 1060px) {
+  #content2 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #content2 .lado {
+    padding: 170px;
+  }
+
+  .imagen-central {
+    width: 220px;
+    max-width: 70vw;
+  }
+
+  .imagen-central img {
+    content: url("/img/container2l.webp"); /* cambia imagen en móviles */
+    margin-top: -17px;
+  }
+
+  .lado {
+    height: auto;
+    width: 100%;
+  }
+
+  .lado h2 {
+    font-size: 1.5rem;
+    margin-top: -17px;
+  }
+
+  .lado p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Estilo general compartido por ambos lados */
+.lado {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  padding: 40px 20px;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Fondo del lado izquierdo (Programación) */
+.izquierdo {
+  background: linear-gradient(to right, #111827, #1f2937);
+}
+
+/* Fondo del lado derecho (Mecánica) */
+.derecho {
+  background: linear-gradient(to left, #374151, #4b5563);
+}
+
+/* Títulos y párrafos (ambos lados) */
+.lado h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.lado p {
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+/* ✅ Imagen decorativa para Programación */
+.decoracion-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/imgp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  filter: brightness(0.9);
+  z-index: 0;
+  /* pointer-events: none; */ /* eliminá esta línea */
+  transition: opacity 1s ease;
+}
+
+/*
+.decoracion-fondo:hover {
+  opacity: 0.6;
+}
+*/
+
+/* ✅ Imagen decorativa para Mecánica */
+.decoracion-fondo-mecanica {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/imgmm.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  filter: saturate(0.7);
+  z-index: 0;
+    /* pointer-events: none; */ /* eliminá esta línea */
+  transition: opacity 1s ease;
+}
+
+/*
+.decoracion-fondo-mecanica:hover {
+  opacity: 0.6;
+}
+*/

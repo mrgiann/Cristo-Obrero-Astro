@@ -1,0 +1,55 @@
+---
+import '../styles/navbar.css';
+---
+
+<div id="navbar">
+  <div class="left">
+    <a href="/"><img src="/img/logo.png" alt="Icono" class="logo" /></a>
+    <div class="titulo">
+      <div class="instituto"><a href="/">Instituto Industrial</a></div>
+      <div class="cristo"><a href="/">Cristo Obrero</a></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="dropdown">
+      <button>Institución ▾</button>
+      <div class="dropdown-content">
+        <a href="/administracion">Administración</a>
+        <a href="/acompañamiento">Acompañamiento</a>
+        <a href="/noticias-y-proyectos">Noticias y proyectos</a>
+      </div>
+    </div>
+    <button><a href="/aspirantes">Aspirantes</a></button>
+    <button><a href="/contacto"> Contacto</a></button>
+    <button><a href="https://iico2025.aferreira.es/" class="tutor-app-link" target="_blank" rel="noopener noreferrer">Tutor App</a></button>
+  </div>
+
+  <div class="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+    ☰
+  </div>
+
+  <div id="mobile-menu">
+    <div class="mobile-item">
+      <button onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open')">Institución</button>
+      <div class="submenu">
+        <a href="/administracion">Administración</a>
+        <a href="/acompañamiento">Acompañamiento</a>
+        <a href="/noticias-y-proyectos">Noticias y proyectos</a>
+      </div>
+    </div>
+    <a href="/aspirantes">Aspirantes</a>
+    <a href="/contacto">Contacto</a>
+    <a href="https://iico2025.aferreira.es/" class="tutor-app-link" target="_blank" rel="noopener noreferrer">Tutor App</a>
+  </div>
+
+  <script>
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        document.getElementById('mobile-menu')?.classList.remove('open');
+        document.querySelectorAll('#mobile-menu button.active').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('#mobile-menu .submenu.open').forEach(sub => sub.classList.remove('open'));
+      }
+    });
+  </script>
+</div>

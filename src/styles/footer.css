@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+  --celeste: #65AFEB;
+  --blanco: #ffffff;
+  --fuente-principal: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  margin: 0;
+}
+
+.footer {
+background-color: hsla(204, 38%, 15%, 0.871);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+  padding-left: 5%;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.logo {
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0 0 10px;
+  
+}
+.footer-section .logo-container {
+  position: relative;
+  margin-top: 4px;
+}
+
+.footer-section .logo-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transform: translateX(50%);
+  width: 100px; 
+  background: linear-gradient(to right, transparent, #65afebad, transparent);
+}
+
+
+.footer-section h3 span {
+   font-weight: 600;
+  font-size: 1.16rem;
+  display: block;
+  color: #65AFEB;
+}
+
+.footer-section h4 {
+  position: relative;
+  display: inline-block; /* permite que el pseudo-elemento se ajuste al texto */
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+}
+
+.footer-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px; /* podés ajustar este valor */
+  background: linear-gradient(to right, transparent, #65afebad, transparent);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 6px 0;
+  transition: color 0.3s;
+    margin-bottom: 40px;
+}
+
+.footer-section ul li a:hover,
+.acceso:hover {
+  color: #aad4ff;
+}
+
+.acceso {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  margin-top: 15px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.acceso span {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.acceso:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.svg{
+    width: 18px;
+    height: 18px;
+}
+
+.svgg{
+    width: 20px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 15px;
+}
+  .footer-container h4{
+    font-size: 1.3rem;
+  }
+
+@media (max-width: 800px) {
+  .footer-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .footer-section .logo-container::after{
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-section h4::after{
+    width: 200px;
+  }
+
+  .footer-container h4{
+    font-size: 1.4rem;
+  }
+  
+  .footer-section .logo-container {
+  margin-bottom: 20px;
+  }
+
+  .icon-text{
+    margin-left: 0px;
+    gap: 8px;
+  }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .svgg{
+    width: 17px;
+    height: 25px;
+    margin-right: 10px;
+    }
+    .contacto{
+      text-align: center;
+      align-items: center;
+    }
+    a.acceso{
+      width: 100%;
+      justify-content: center;
+    }
+}
