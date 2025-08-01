@@ -1,0 +1,54 @@
+h2 {
+  color: #65AFEB;
+  margin-top: 0;
+}
+
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.descargas {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.descargas h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #337ab7;
+}
+
+.grilla-archivos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.archivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 220px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.archivo:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.archivo img {
+  width: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.archivo p {
+  color: #333;
+  font-size: 0.95rem;
+}
