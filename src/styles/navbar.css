@@ -65,14 +65,12 @@ a{
   color: var(--celeste);
 }
 
-/* Lado derecho */
 #navbar .right {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-/* Botones */
 #navbar button {
   background: transparent;
   border: none;
@@ -91,7 +89,6 @@ a{
   color: var(--celeste);
 }
 
-/* Dropdowns */
 #navbar .dropdown {
   position: relative;
 }
@@ -124,16 +121,14 @@ a{
   display: block;
 }
 
-/* --- Responsive --- */
 
-/* Botón hamburguesa */
 .hamburger {
   display: none;
   font-size: 1.8rem;
   color: var(--blanco);
   cursor: pointer;
 }
-/* Menú móvil */
+
 #mobile-menu {
   display: none;
   position: absolute;
@@ -158,10 +153,10 @@ a{
   display: flex;
 }
 
-/* Estilo base común para a y button */
+
 #mobile-menu a,
 #mobile-menu button {
-  all: unset; /* resetea estilos inconsistentes entre <a> y <button> */
+  all: unset; 
   display: block;
   max-width: 120px;
   color: var(--blanco);
@@ -175,7 +170,7 @@ a{
   box-sizing: border-box;
 }
 
-/* Flechita posicionada sin desplazar texto */
+
 #mobile-menu button::after {
   content: "▼";
   position: absolute;
@@ -190,13 +185,11 @@ a{
   transform: translateY(-50%) rotate(0);
 }
 
-/* Hover */
 #mobile-menu a:hover,
 #mobile-menu button:hover {
   color: var(--celeste);
 }
 
-/* Submenús móviles */
 .submenu {
   display: none;
   flex-direction: column;
@@ -225,7 +218,6 @@ a{
   opacity: 0.9;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   #navbar .right {
     display: none;
@@ -235,5 +227,8 @@ a{
     display: block;
   }
 }
+
+
+
 
 
