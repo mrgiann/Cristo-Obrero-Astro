@@ -1,7 +1,7 @@
 # Cristo Obrero – Página web creada con Astro
 <div style="display: flex; gap: 10px;">
   <img src="https://github.com/user-attachments/assets/131d151c-7b48-4410-977a-0b1551959f91" width="200" />
-  <img src="https://github.com/user-attachments/assets/89da0bf0-3f15-41de-a0a9-f36c00e3ce24" width="300" />
+  <img src="https://github.com/user-attachments/assets/89da0bf0-3f15-41de-a0a9-f36c00e3ce24" width="400" />
 </div>
 
 
