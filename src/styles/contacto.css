@@ -19,7 +19,7 @@ main{
 
 .columna {
   flex: 1 1 calc(33.333% - 1.5rem);
-  background-color: white;
+  background-color: #181A1B;
   padding: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -30,13 +30,13 @@ main{
 h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #003366;
+  color: #8FCDFF;
   text-align: center;
 }
 
 h2 {
   font-size: 1.4rem;
-  color: #003366;
+  color: #8FCDFF;
   margin-top: 0;
 }
 
@@ -50,7 +50,7 @@ ul {
 }
 
 section a {
-  color: #0056b3;
+  color: #0079fa;
   text-decoration: none;
 }
 
