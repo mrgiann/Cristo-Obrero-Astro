@@ -138,7 +138,7 @@ body {
   z-index: 2;
   background: transparent;
   pointer-events: none;
-  width: 280px; /* más grande que antes */
+  width: 280px; 
   max-width: 30vw;
 }
 
@@ -147,11 +147,9 @@ body {
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 0 white) drop-shadow(0 0 3px white);
-  border: none; /* No uses border real */
+  border: none; 
 }
 
-
-/* ✅ Responsive para móviles */
 @media (max-width: 1060px) {
   #content2 {
     flex-direction: column;
@@ -168,7 +166,7 @@ body {
   }
 
   .imagen-central img {
-    content: url("/img/container2l.webp"); /* cambia imagen en móviles */
+    content: url("/img/container2l.webp"); 
     margin-top: -17px;
   }
 
@@ -187,7 +185,7 @@ body {
   }
 }
 
-/* Estilo general compartido por ambos lados */
+
 .lado {
   position: relative;
   overflow: hidden;
@@ -201,17 +199,14 @@ body {
   z-index: 1;
 }
 
-/* Fondo del lado izquierdo (Programación) */
 .izquierdo {
   background: linear-gradient(to right, #111827, #1f2937);
 }
 
-/* Fondo del lado derecho (Mecánica) */
 .derecho {
   background: linear-gradient(to left, #374151, #4b5563);
 }
 
-/* Títulos y párrafos (ambos lados) */
 .lado h2 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -230,7 +225,6 @@ body {
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
-/* ✅ Imagen decorativa para Programación */
 .decoracion-fondo {
   position: absolute;
   top: 0;
@@ -244,7 +238,6 @@ body {
   opacity: 0.6;
   filter: brightness(0.9);
   z-index: 0;
-  /* pointer-events: none; */ /* eliminá esta línea */
   transition: opacity 1s ease;
 }
 
@@ -254,7 +247,6 @@ body {
 }
 */
 
-/* ✅ Imagen decorativa para Mecánica */
 .decoracion-fondo-mecanica {
   position: absolute;
   top: 0;
@@ -269,7 +261,6 @@ body {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   filter: saturate(0.7);
   z-index: 0;
-    /* pointer-events: none; */ /* eliminá esta línea */
   transition: opacity 1s ease;
 }
 
