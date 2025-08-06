@@ -38,7 +38,6 @@ ul {
   padding-left: 1.2em;
 }
 
-/* Botón hamburguesa */
 #menu-toggle {
   display: none;
   position: fixed;
@@ -53,7 +52,6 @@ ul {
   cursor: pointer;
 }
 
-/* Sidebar lateral */
 #sidebar {
   position: fixed;
   top: 69.98px;
@@ -90,7 +88,6 @@ ul {
   background: rgba(101, 175, 235, 0.2);
 }
 
-/* Animación flecha (opcional si usás una flechita en el botón) */
 #menu-toggle .arrow {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -116,7 +113,7 @@ ul {
 .containerfooter{
   margin-left: 224px;
 }
-/* Mobile: menú oculto por defecto */
+
 @media (max-width: 768px) {
   #menu-toggle {
     display: block;
