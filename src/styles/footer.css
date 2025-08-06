@@ -82,7 +82,7 @@ background-color: hsla(204, 38%, 15%, 0.871);
 
 .footer-section h4 {
   position: relative;
-  display: inline-block; /* permite que el pseudo-elemento se ajuste al texto */
+  display: inline-block; 
   font-size: 1.2em;
   margin-bottom: 10px;
   padding-bottom: 5px;
@@ -96,7 +96,7 @@ background-color: hsla(204, 38%, 15%, 0.871);
   left: 50%;
   transform: translateX(-50%);
   height: 4px;
-  width: 100px; /* podés ajustar este valor */
+  width: 100px;
   background: linear-gradient(to right, transparent, #65afebad, transparent);
 }
 
