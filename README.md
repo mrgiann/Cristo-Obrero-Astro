@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/89da0bf0-3f15-41de-a0a9-f36c00e3ce24" width="560" />
 </div>
 
-<a href="https://cristo-obrero-astro.netlify.app">Ver sitio</a>
+<a tarjet="_blank" href="https://cristo-obrero-astro.netlify.app">Ver sitio</a>
 
 
 # Clonar el repositorio
